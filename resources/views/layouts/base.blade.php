@@ -181,12 +181,12 @@
 								</a>
 							</div>
 <div class="wrap-icon-section minicart">
-<a href="#" class="link-direction">
+<a href="/cart" class="link-direction">
 <i class="fa fa-shopping-basket" aria-hidden="true"></i>
-@if(Cart::count() > 0)
-<div class="left-info">
-<span class="index">{{Cart::count()}}</span>
-@endif 
+															@if(Cart::count() > 0)
+															<div class="left-info">
+															<span class="index">{{Cart::count()}} items</span>
+															@endif 
 <span class="title">CART</span>
 </div>
 </a>
@@ -502,10 +502,9 @@
 	</footer>
 	
 	<script src="{{asset('assets/js/jquery-1.12.4.minb8ff.js?ver=1.12.4')}}"></script>
-	<script src="{{asset('assets/js/jquery-ui-1.12.4.minb8ff.js?ver=1.12.4')}}"></script>
 	<script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
-	<script src="{{asset('assets/js/jquery.flexslider.js')}}"></script>
 	<script src="{{asset('assets/js/chosen.jquery.min.js')}}"></script>
+	<script src="{{asset('assets/js/jquery.flexslider.js')}}"></script>
 	<script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
 	<script src="{{asset('assets/js/jquery.countdown.min.js')}}"></script>
 	<script src="{{asset('assets/js/jquery.sticky.js')}}"></script>

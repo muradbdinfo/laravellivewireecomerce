@@ -8,11 +8,12 @@ use Cart;
 
 class DetailsComponent extends Component
 {
-    public $slug;
+        public $slug;
+        
 public function mount($slug)
-{
-    $this->slug = $slug;
-}
+        {
+        $this->slug = $slug;
+        }
 
 
 public function store($product_id,$product_name,$product_price)
