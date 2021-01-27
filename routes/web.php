@@ -27,6 +27,7 @@ Route::get('/shop',App\Http\Livewire\ShopComponent::class)->name('shop');
 Route::get('/cart',App\Http\Livewire\CartComponent::class)->name('cart');;
 
 Route::get('/checkout',App\Http\Livewire\CheckoutComponent::class)->name('checkout');
+Route::get('/product/{slug}',App\Http\Livewire\DetailsComponent::class)->name('product.details');
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //     return view('dashboard');
